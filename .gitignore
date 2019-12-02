@@ -1,8 +1,6 @@
 .DS_Store
 .idea
 html/wp-content/upgrade
-html/wp-admin
-html/wp-includes
 
 # ignore OS generated files
 ehthumbs.db

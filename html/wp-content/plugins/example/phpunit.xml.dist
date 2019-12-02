@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<phpunit
+ bootstrap="tests/bootstrap.php"
+ backupGlobals="false"
+ colors="true"
+ convertErrorsToExceptions="true"
+ convertNoticesToExceptions="true"
+ convertWarningsToExceptions="true"
+ >
+ <testsuites>
+  <testsuite name="integration">
+   <directory prefix="test-" suffix=".php">./tests/</directory>
+  </testsuite>
+ </testsuites>
+    <logging>
+        <log type="coverage-html" target="./../../../../development/code-coverage"
+             lowUpperBound="50" highLowerBound="80"
+             showUncoveredFiles="false" />
+    </logging>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./inc/App</directory>
+        </whitelist>
+    </filter>
+</phpunit>

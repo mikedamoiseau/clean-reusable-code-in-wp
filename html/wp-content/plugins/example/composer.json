@@ -1,0 +1,9 @@
+{
+    "name": "root/example",
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "inc"
+        }
+    },
+    "require": {}
+}
